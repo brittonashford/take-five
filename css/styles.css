@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
 
 /* Variables */
-
 :root {
-  --color-win: #78CF82;
-  --color-lose: #D94545;
-  --color-start: #5b85b7;
+  --color-win: #2e4146;
+  --color-win-text: #cdfae5;
+  --color-lose: #713701;
+  --color-lose-text: #f1f1cb;
+  --color-start: #3a3f58;
   --color-neutral: #445069;
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
@@ -17,7 +18,6 @@
 }
 
 /* main */
-
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -84,14 +84,12 @@ button {
 }
 
 /* Title */
-
 .header {
   color: #3a3f58;
 }
 
 
 /* Phrase */
-
 .letter {
   font-size: var(--font-size-medium);
   height: 65px;
@@ -107,8 +105,6 @@ button {
   width: 15px;
 }
 
-
-
 .show {
   color: #fff;
   background-color: #4ac0d5;
@@ -122,9 +118,7 @@ button {
   animation-duration: .5s;
 }
 
-
 /* Keyboard */
-
 .keyrow {
   display: flex;
   justify-content: center;
@@ -161,7 +155,6 @@ button {
 
 
 /* Overlay */
-
 #overlay {
   display: flex;
   flex-direction: column;
@@ -180,7 +173,7 @@ button {
 }
 
 .start {
-  background-color: #3a3f58;
+  background-color: var(--color-start);
 }
 
 .start a {
@@ -189,16 +182,10 @@ button {
 
 .win {
   background-color: var(--color-win);
-}
-
-.win a {
-  color: var(--color-win);
+  color: var(--color-win-text) !important;
 }
 
 .lose {
-  background-color: #f5785f;
-}
-
-.lose a {
-  color: var(--color-lose);
+  background-color: var(--color-lose);
+  color: var(--color-lose-text) !important;
 }
